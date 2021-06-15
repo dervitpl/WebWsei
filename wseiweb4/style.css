@@ -1,0 +1,39 @@
+
+.lefttabclass {
+	height: 100%;
+	width: 0;
+    top: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	background-color: rgb(241, 0, 0);
+    padding-top: 60px;
+	overflow-x: hidden;
+	transition: 0.5s;
+	
+}
+.lefttabclass a {
+	padding: 8px 8px 8px 32px;
+    display: block;
+	transition: 0.5s;
+	font-size: 40px;
+	color: #ffe600;
+    text-decoration: none;
+}
+.lefttabclass a:hover {
+	color: #2f00ff;
+}
+.lefttabclass .closebutton {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+body {}
+
+
+#tytul {
+	padding-top: 20px;
+	font-size: 30px;
+}
