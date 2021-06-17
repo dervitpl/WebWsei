@@ -9,19 +9,25 @@
 </head>
 <body>
     <div id="menu-nav" class="menu-nav-class">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="styles.html">Styles</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
     </div>
     <main>
         <div id="upper">
             <div id="menu">
                 <div id="logo"><img src="img/logo@2x.png" alt="logo" ></div>
                 <div id="menu-roz">
-                    <a class="menu-rozwieniecie nav-active" ><div class="menu-rozwieniecie-text">Home</div></a>
-                    <a class="menu-rozwieniecie" ><div class="menu-rozwieniecie-text">About</div></a>
-                    <a class="menu-rozwieniecie" ><div class="menu-rozwieniecie-text">Styles</div></a>
-                    <a class="menu-rozwieniecie" ><div class="menu-rozwieniecie-text">Gallery</div></a>
-                    <a class="menu-rozwieniecie" ><div class="menu-rozwieniecie-text">Blog</div></a>
-                    <a class="menu-rozwieniecie" ><div class="menu-rozwieniecie-text">Contact</div></a>
+                    <a class="menu-rozwieniecie nav-active" href="home.html"><div class="menu-rozwieniecie-text">Home</div></a>
+                    <a class="menu-rozwieniecie" href="about.html"><div class="menu-rozwieniecie-text">About</div></a>
+                    <a class="menu-rozwieniecie" href="styles.html"><div class="menu-rozwieniecie-text">Styles</div></a>
+                    <a class="menu-rozwieniecie" href="gallery.html"><div class="menu-rozwieniecie-text">Gallery</div></a>
+                    <a class="menu-rozwieniecie" href="blog.html"><div class="menu-rozwieniecie-text">Blog</div></a>
+                    <a class="menu-rozwieniecie" href="contact.html"><div class="menu-rozwieniecie-text">Contact</div></a>
                 </div>
                 <div id="navi" onclick="openNav()">&#9776;</div>
             </div>
@@ -72,6 +78,6 @@
             </div>
         </div>
     </main>
-    
+    <script src="js/menu.js"></script>
 </body>
 </html>
