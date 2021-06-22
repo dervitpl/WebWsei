@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap');
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -33,8 +42,8 @@ p{
     width: 180px;
     height: 35px;
     line-height: 35px;
-    border: 2px solid #fb2274;
-    color: #fb2274;
+    border: 3px solid #d11353;
+    color: #d11353;
     display: block;
     margin: 25px auto 0;
     text-align: center;
@@ -44,8 +53,6 @@ p{
 .main_container{
 	position: relative;
 }
-
-/* Navigation Bar */
 .navbar{
 	width: 100%;
 	height: 65px;
@@ -78,17 +85,30 @@ p{
 	
 	color: #fff;
 }
+.about img {
+	max-height: 300;
+	max-width: 300px;
+	min-height: 200px;
+	min-width: 200px;
+	color: #111;
+	border-radius: 50%;
+	shape-outside: ellipse();
+	background: #d11352;
+	background-clip: content-box;
+	border: 5px solid rgb(0, 0, 0);
+	display: inline-block
+	
+	
+}
 
-/* banner_image */
 .banner_image{
-	background: url('images/masno.png') no-repeat bottom -20px center;
+	background: url('images/masno.png') no-repeat bottom center;
 	background-size: cover;
 	width: 100%;
 	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background-color: rgb(255, 89, 117);
 }
 
 .banner_content{
@@ -109,7 +129,7 @@ p{
 }
 
 
-/* About */
+
 .about,
 .services,
 .contactus,
@@ -128,18 +148,19 @@ p{
 .ourteam p {
     color: rgb(255, 255, 255);
 }
-/* Services */
+
 .services{
 	background: #d11353;
 }
 .services h3 {
-    font-size: 30px;
+    
     font-family: 'Oxanium', cursive;
 }
 .diff_services {
     margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .diff_services .diff_services_item {
@@ -156,7 +177,7 @@ p{
     margin-bottom: 15px;
 }
 
-/* Contact us */
+
 ::placeholder {
     color: white;
     font-family: 'Oxanium';
@@ -187,7 +208,7 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-/* our team */
+
 .ourteam{
 	background: #d11353;
 }
@@ -225,7 +246,7 @@ textarea {
 	transform: scale(1.1);
 }
 
-/* footer */
+
 .footer{
 	width: 100%;
 	text-align: center;
@@ -240,12 +261,16 @@ textarea {
 
 
 @media (max-width: 720px){
-
 	.navbar{
 		height: auto;
 		flex-direction: column;
 	}
-
+	.services {
+		padding: 2% ;
+	}
+	.diff_services_item h3{
+	font-size: 15px;
+	}
 	.logo{
 		margin-bottom: 15px;
 	}
@@ -260,17 +285,16 @@ textarea {
 	}
 
 	.banner_content{
-		margin-top: 95px;
+		margin-top: 40%;
 	}
     .banner_image{
-        background: url('images/masno.png') no-repeat right -450px bottom -90px;
+		
+		background: url('images/masno.png') no-repeat right -450px bottom -90px;
     }
     
     
 }
 
-
-/* arrow */
 .arrow{
 	position: fixed;
 	bottom: 25px;
